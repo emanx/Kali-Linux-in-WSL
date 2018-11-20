@@ -6,12 +6,13 @@ check "Windows Subsystem for Linux" On. Let the setup complete and may ask you t
 
 Go to Microsoft Store, search for "Kali Linux" Apps, and install it.
 
-Once done, launch kali linux, create your username and password. Remember to exclude you Kali Linux Apps directory from your Antivirus.
+Once done, launch kali linux, create your username and password. Remember to exclude your Kali Linux working directory from in your Antivirus.
 Example: exclusion from Antivirus: "C:\Users\myusername\AppData\Local\Packages\KaliLinux.54290C8133FEE_ey8k8hqnwqnmg"
 
 Important! Update Kali distro: 
-apt update
-apt upgrade
+$apt update
+$apt upgrade
+$apt remove
 
 There are several desktop version for kali, you can check by typing this at the command "apt search kali desktop"
 
@@ -36,3 +37,11 @@ kali-desktop-xfce/kali-rolling 2019.1.0 all
 Tested working so far "kali-desktop-xfce" and "kali-desktop-gnome"
 
 Example to install gnome environment: $apt install kali-desktop-nome
+
+remember to export the display by typing the command-> export DISPLAY=127.0.0.1:0.0"
+or
+include that command into your ".bashrc"
+
+to launch any linux app and getting the console to release, type the name of the program follwed by "& disown" example "leafpad & disown"
+
+
