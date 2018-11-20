@@ -1,0 +1,10 @@
+Inside Windows 10, open Control Panel-> Turn Windows Features on or off
+check "Windows Subsystem for Linux" On. Let the setup complete and may ask you to restart your computer.
+
+Go to Microsoft Store, search for "Kali Linux" Apps, and install it.
+
+Once done, launc kali linux, create your username and password. Remember to exclude you Kali Linux Apps directory from your Antivirus.
+Example: exclusion from Antivirus: "C:\Users\myusername\AppData\Local\Packages\KaliLinux.54290C8133FEE_ey8k8hqnwqnmg"
+
+TBC
+
