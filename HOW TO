@@ -1,10 +1,38 @@
+Preparation: Download and install X server for Windows from "https://sourceforge.net/projects/vcxsrv/files/vcxsrv/1.20.1.3/". 
+Download and install the right architecture - x86 or x64 and Do not install the debug version.
+
 Inside Windows 10, open Control Panel-> Turn Windows Features on or off
 check "Windows Subsystem for Linux" On. Let the setup complete and may ask you to restart your computer.
 
 Go to Microsoft Store, search for "Kali Linux" Apps, and install it.
 
-Once done, launc kali linux, create your username and password. Remember to exclude you Kali Linux Apps directory from your Antivirus.
+Once done, launch kali linux, create your username and password. Remember to exclude you Kali Linux Apps directory from your Antivirus.
 Example: exclusion from Antivirus: "C:\Users\myusername\AppData\Local\Packages\KaliLinux.54290C8133FEE_ey8k8hqnwqnmg"
 
-TBC
+Important! Update Kali distro: 
+apt update
+apt upgrade
 
+There are several desktop version for kali, you can check by typing this at the command "apt search kali desktop"
+
+kali-desktop-common/kali-rolling 2019.1.0 all
+  Meta-package with dependencies common to all desktops provided by Kali
+
+kali-desktop-gnome/kali-rolling 2019.1.0 all
+  GNOME based Kali desktop
+
+kali-desktop-kde/kali-rolling 2019.1.0 all
+  KDE based Kali desktop
+
+kali-desktop-live/kali-rolling 2019.1.0 all
+  Meta-package for Kali live images
+
+kali-desktop-lxde/kali-rolling 2019.1.0 all
+  LXDE based Kali desktop
+
+kali-desktop-xfce/kali-rolling 2019.1.0 all
+  Xfce based Kali desktop
+
+Tested working so far "kali-desktop-xfce" and "kali-desktop-gnome"
+
+Example to install gnome environment: $apt install kali-desktop-nome
