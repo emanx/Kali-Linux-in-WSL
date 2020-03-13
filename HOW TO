@@ -1,4 +1,4 @@
-Preparation: Download and install X server for Windows from "https://sourceforge.net/projects/vcxsrv/files/vcxsrv/1.20.1.3/". 
+Preparation: Download and install the X server for Windows from "https://sourceforge.net/projects/vcxsrv/files/vcxsrv/1.20.1.3/". 
 Download and install the right architecture - x86 or x64 and Do not install the debug version.
 
 Inside Windows 10, open Control Panel-> Turn Windows Features on or off
@@ -6,7 +6,7 @@ check "Windows Subsystem for Linux" On. Let the setup complete and may ask you t
 
 Go to Microsoft Store, search for "Kali Linux" Apps, and install it.
 
-Once done, launch kali linux, create your username and password. Remember to exclude your Kali Linux working directory from in your Antivirus.
+Once done, launch Kali Linux, create your username and password. Remember to exclude your Kali Linux working directory from your Antivirus.
 Example: exclusion from Antivirus: "C:\Users\myusername\AppData\Local\Packages\KaliLinux.54290C8133FEE_ey8k8hqnwqnmg"
 
 Important! Update Kali distro: 
@@ -20,7 +20,7 @@ kali-desktop-common/kali-rolling 2019.1.0 all
   Meta-package with dependencies common to all desktops provided by Kali
 
 kali-desktop-gnome/kali-rolling 2019.1.0 all
-  GNOME based Kali desktop
+  GNOME-based Kali desktop
 
 kali-desktop-kde/kali-rolling 2019.1.0 all
   KDE based Kali desktop
@@ -34,7 +34,7 @@ kali-desktop-lxde/kali-rolling 2019.1.0 all
 kali-desktop-xfce/kali-rolling 2019.1.0 all
   Xfce based Kali desktop
 
-Tested working so far "kali-desktop-xfce" and "kali-desktop-gnome"
+Tested working so far "kali-desktop-Xfce" and "kali-desktop-gnome"
 
 Example to install gnome environment: $apt install kali-desktop-nome
 
@@ -42,6 +42,6 @@ remember to export the display by typing the command-> export DISPLAY=127.0.0.1:
 or
 include that command into your ".bashrc"
 
-to launch any linux app and getting the console to release, type the name of the program follwed by "& disown" example "leafpad & disown"
+to launch any Linux app and getting the console to release, type the name of the program followed by "& disown" example "leafpad & disown"
 
 
